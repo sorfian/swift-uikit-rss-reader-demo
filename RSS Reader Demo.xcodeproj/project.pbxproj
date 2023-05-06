@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D61CAD6C29F66DFF0088565A /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61CAD6B29F66DFF0088565A /* UIFontExtension.swift */; };
 		D65C042B29F65E5000753FBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65C042A29F65E5000753FBF /* AppDelegate.swift */; };
 		D65C042D29F65E5000753FBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65C042C29F65E5000753FBF /* SceneDelegate.swift */; };
-		D65C042F29F65E5000753FBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65C042E29F65E5000753FBF /* ViewController.swift */; };
 		D65C043229F65E5000753FBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65C043029F65E5000753FBF /* Main.storyboard */; };
 		D65C043429F65E5100753FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65C043329F65E5100753FBF /* Assets.xcassets */; };
 		D65C043729F65E5100753FBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65C043529F65E5100753FBF /* LaunchScreen.storyboard */; };
+		D65C043F29F6610C00753FBF /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65C043E29F6610C00753FBF /* NewsTableViewController.swift */; };
+		D65C044129F6612900753FBF /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65C044029F6612900753FBF /* NewsTableViewCell.swift */; };
+		D6B1AA5929F67F4D00B152A3 /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AA5829F67F4D00B152A3 /* FeedParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D61CAD6B29F66DFF0088565A /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		D65C042729F65E5000753FBF /* RSS Reader Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSS Reader Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65C042A29F65E5000753FBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D65C042C29F65E5000753FBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D65C042E29F65E5000753FBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D65C043129F65E5000753FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D65C043329F65E5100753FBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D65C043629F65E5100753FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D65C043829F65E5100753FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D65C043E29F6610C00753FBF /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		D65C044029F6612900753FBF /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		D6B1AA5829F67F4D00B152A3 /* FeedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D61CAD6A29F66DEC0088565A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D61CAD6B29F66DFF0088565A /* UIFontExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		D65C041E29F65E5000753FBF = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +70,16 @@
 		D65C042929F65E5000753FBF /* RSS Reader Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D61CAD6A29F66DEC0088565A /* Extension */,
 				D65C042A29F65E5000753FBF /* AppDelegate.swift */,
 				D65C042C29F65E5000753FBF /* SceneDelegate.swift */,
-				D65C042E29F65E5000753FBF /* ViewController.swift */,
 				D65C043029F65E5000753FBF /* Main.storyboard */,
 				D65C043329F65E5100753FBF /* Assets.xcassets */,
 				D65C043529F65E5100753FBF /* LaunchScreen.storyboard */,
 				D65C043829F65E5100753FBF /* Info.plist */,
+				D65C043E29F6610C00753FBF /* NewsTableViewController.swift */,
+				D65C044029F6612900753FBF /* NewsTableViewCell.swift */,
+				D6B1AA5829F67F4D00B152A3 /* FeedParser.swift */,
 			);
 			path = "RSS Reader Demo";
 			sourceTree = "<group>";
@@ -138,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D65C042F29F65E5000753FBF /* ViewController.swift in Sources */,
+				D6B1AA5929F67F4D00B152A3 /* FeedParser.swift in Sources */,
 				D65C042B29F65E5000753FBF /* AppDelegate.swift in Sources */,
+				D61CAD6C29F66DFF0088565A /* UIFontExtension.swift in Sources */,
 				D65C042D29F65E5000753FBF /* SceneDelegate.swift in Sources */,
+				D65C044129F6612900753FBF /* NewsTableViewCell.swift in Sources */,
+				D65C043F29F6610C00753FBF /* NewsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
